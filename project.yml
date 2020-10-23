@@ -1,0 +1,7 @@
+---
+
+- name: Project playbook
+  host: all
+  roles:
+    - check_for_file
+    - upgrade_stuff_now
