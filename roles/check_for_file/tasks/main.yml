@@ -2,9 +2,9 @@
 # tasks file for environment
 
 - name: Check for file using os.stat
-    stat:
-      path: /tmp/sprompt.yaml
-    register: file_details
+  stat:
+    path: /tmp/sprompt.yaml
+  register: file_details
 
 - name:  Evaluate whether the file exists
   debug:
