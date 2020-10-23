@@ -1,7 +1,7 @@
 ---
 
 - name: Project playbook
-  host: all
+  hosts: all
   tasks:
 
     - name: Check for file using os.stat
