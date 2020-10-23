@@ -1,0 +1,17 @@
+---
+# tasks file for environment
+
+- name: Check for file using os.stat
+    stat:
+      path: /tmp/sprompt.yaml
+    register: file_details
+
+- name:  Evaluate whether the file exists
+  debug:
+    msg:
+      - HERE ARE THE FILE DETAILS!!!
+      - file_details
+      - "{{ file_details }}"
+      - This should have been true!
+
+  failed_when: not file_details.stat.exists

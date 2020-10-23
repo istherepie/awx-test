@@ -1,0 +1,11 @@
+# from GitHub, overriding the name and specifying a specific tag
+- name: check_for_file
+  scm: 'git'
+  src: git@git.nodebender.net:ansible_roles/check-for-file.git
+  version: 1.0.0
+
+# from GitHub, overriding the name and specifying a specific tag
+- name: upgrade_stuff_now
+  scm: 'git'
+  src: git@git.nodebender.net:ansible_roles/upgradeStuffer.git
+  version: 1.0.1

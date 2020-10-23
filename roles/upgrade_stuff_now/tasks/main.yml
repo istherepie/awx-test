@@ -1,0 +1,13 @@
+---
+# tasks file for bring_up_to_date
+
+- name: Install dnf
+  yum:
+    name: "dnf"
+    state: latest
+
+- name: Upgrade all packages
+  dnf:
+    name: "*"
+    state: latest
+    update_cache: yes
