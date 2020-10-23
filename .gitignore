@@ -1,0 +1,13 @@
+# macos
+.DS_Store
+
+# python
+container*
+venv*
+__pycache__
+*.pyc
+
+# local testing
+docker-compose.yml
+local_vol
+config
